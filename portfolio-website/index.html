@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f2cc035e0d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header"><b>Home</b></a></li>
+                <li><a href="#about"><b>About</b></a></li>
+                <li><a href="#services"><b>Services</b></a></li>
+                <li><a href="#portfolio"><b>Portfolio</b></a></li>
+                <li><a href="#contact"><b>Contact</b></a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Engineer / Data Analyst</p>
+            <h1>Hi, I'm <span>Oluwafemi</span> <br>DADA-BASHUA<br>From Nigeria</h1>
+        </div>
+    </div>
+</div>    
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/About.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a Data Engineer and Data Analyst with over 2 years of experience transforming raw data into actionable insights and scalable solutions. I specialize in building robust data pipelines, optimizing data workflows, and uncovering key business insights through tools like SQL, Python, Power BI, Tableau, and Apache Spark.
+                        My expertise extends to big data processing, ETL development, and cloud platforms such as AWS. I hold certifications as a Project Management Professional (PMP) and Business Intelligence Analyst, which have equipped me to lead teams, manage cross-functional projects, and deliver data-driven results effectively.
+                        Beyond my professional journey, I’m deeply passionate about creativity and self-expression. When I’m not engineering data solutions, you’ll often find me drawing, exploring digital art, and immersing myself in the vibrant world of anime and music.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')"> Skills </p>
+                    <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                    <p class="tab-links" onclick="opentab('Education and Certifications')"> Education and Certifications </p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Programming Languages:</span><br> Python, SQL, R<br></li>
+                        <li><span>Data Engineering:</span><br>Apache Kafka, Apache Spark, ETL, AWS(S3, Redshift, EC2)<br></li>
+                        <li><span>Visualization:</span><br>Power BI, Tableau<br></li>
+                        <li><span>Databases:</span><br>PostgreSQL, MySQL, MS SQLServer<br></li>
+                    </ul>
+                </div>        
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>September 2024 – Present</span><br>Remote<br>Data Engineer Internship at DataInno Analytics<br> </li>
+                        <li><span>April 2023 – August 2024</span><br>Data Analyst at Queylon Atelier<br> </li>
+                        <li><span>March 2022 – February 2023</span><br>Financial Audit Internship at Oyo State Ministry of Finance<br> </li>
+                    </ul>
+                </div>        
+                <div class="tab-contents" id="Education and Certifications">
+                    <ul>
+                        <li><span>2016-2021</span><br>B.Sc. in Business Administration<br> </li>
+                        <li><span>Data analysis</span><br>IBM Data Analytics with Excel and R Professional Certificate<br> </li>
+                        <li><span>Cloud Services and Computing</span><br>AWS cloud practitioner<br></li>
+                        <li><span>Business Intelligence</span><br>Google Business Intelligence Analyst Certification<br></li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-wrench"></i>
+                <h2>Data Pipeline Development</h2>
+                <p>Build and optimize ETL/ELT pipelines to transform raw data into actionable insights.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Design & Management</h2>
+                <p>Design scalable database architectures and ensure efficient storage and retrieval of data.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Cloud-Based Data Solutions</h2>
+                <p>Deploy and manage cloud data infrastructure on AWS, Azure, or Google Cloud to support big data needs.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i><i class="fa-solid fa-microchip"></i>
+                <h2>Big Data Processing</h2>
+                <p>Leverage tools like Apache Spark and Kafka for real-time and batch data processing.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-server"></i>
+                <h2>Data Integration & Migration</h2>
+                <p>Analyze datasets to identify trends, patterns, and opportunities for business growth.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Data Analysis & Insights</h2>
+                <p>Deploy and manage cloud data infrastructure on AWS, Azure, or Google Cloud to support big data needs.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-pie"></i>
+                <h2>Dashboard Design & Visualization</h2>
+                <p>Create interactive dashboards using Power BI or Tableau to communicate insights clearly.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-key"></i>
+                <h2>KPI Development & Tracking</h2>
+                <p>Establish and monitor performance metrics tailored to your business objectives.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="Projects-list">
+            <div class="Projects">
+                <img src="Images/Project 1.jpg" alt="">
+                <div class="layer">
+                    <h3>Automated ETL Pipeline for Stock Market Analysis</h3>
+                    <p>Built a Python-based ETL pipeline to extract, clean, and analyze stock market data. The solution enabled streamlined data storage and automated trend analysis.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="Projects">
+                <img src="Images/Project 3.jpg" alt="">
+                <div class="layer">
+                    <h3>Real-Time Weather Monitoring Dashboard</h3>
+                    <p>.Designed a real-time weather dashboard to provide live updates, forecasts, and historical trends for selected cities.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="Projects">
+                <img src="Images/Project 2.jpg" alt="">
+                <div class="layer">
+                    <h3>Real-Time Streaming Pipeline for E-Commerce Analytics</h3>
+                    <p>Designed and implemented a real-time streaming data pipeline to capture and process e-commerce clickstream data for user behavior analysis.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="Projects">
+                <img src="Images/Project 4.jpg" alt="">
+                <div class="layer">
+                    <h3>Data Analysis of E-Commerce Sales Trends</h3>
+                    <p>Performed sales data analysis to identify top-performing products, seasonal trends, and customer behavior insights for a retail company</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>Oluwafemibashua@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+2348072471099</p>
+                <div class="social-icons">
+                    <a href="www.linkedin.com/in/oluwafemibashua1"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/femi_dbb?s=21"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+                <a href="images/Oluwafemi DADA-BASHUA  CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright <i class="fa-regular fa-copyright"></i> Kevin. Made with <i class="fa-solid fa-shield-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+/**
+ * Removes the "active-link" class from all links in the page
+ * which are labeled by class name "tab-links", so that
+ * they do not appear as selected.
+ */
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openMenu(){
+        sidemenu.style.right = "0";
+    }
+    function closeMenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwjuqnPw9J0VcUTUEVUre2er0ytBfPt-xwbH8pTsnJyYPOyqJpSWpd8rcfFxbJQEdT7Ww/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            form.reset
+            setTimeout(() => {
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
